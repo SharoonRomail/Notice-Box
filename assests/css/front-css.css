@@ -1,0 +1,65 @@
+.add_margin {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.notice_box {
+	width: 100%;
+	padding: 25px;
+	margin: 10px 0px;
+	background: #ccc;
+	color: #fff;
+	position: relative;
+	display: block;
+}
+.notice_box b, .notice_box p {
+	display: inline-block;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+}
+span.close_cross {
+	position: absolute;
+	top: 27%;
+	right: 25px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.notice_box.danger {
+	background: #F9665A;
+}
+.notice_box::selection,
+.notice_box.danger b::selection,
+.notice_box.danger span::selection {
+	color: #fff;
+	background: #99342c;
+}
+.notice_box.success {
+	background: #4EB885;
+}
+.notice_box::selection,
+.notice_box.success b::selection,
+.notice_box.success span::selection {
+	color: #fff;
+	background: #2f6e50;
+}
+.notice_box.info {
+	background: #53A6F5;
+}
+.notice_box::selection,
+.notice_box.info b::selection,
+.notice_box.info span::selection {
+	color: #fff;
+	background: #24517a;
+}
+.notice_box.warning {
+	background: #FFA948;
+}
+.notice_box::selection,
+.notice_box.warning b::selection,
+.notice_box.warning span::selection {
+	color: #fff;
+	background: #cd8738;
+}

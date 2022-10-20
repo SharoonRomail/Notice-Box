@@ -1,0 +1,83 @@
+#setting-error-settings-update{
+	padding: 10px !important;
+}
+fieldset.gwd_setting{
+	margin: 0px;
+	border: thin solid #ccc;
+	border-radius: 6px;
+	padding: 20px;
+	width: 96%;
+}
+.info_list{
+	margin: 0px;
+    border-radius: 0px;
+    padding: 0px 20px 10px 20px;
+    width: 96%;
+}
+.info_list li{
+	border: none;
+    list-style: disc inside;
+    padding: 0px 15px;
+}
+.info{
+	font-size: 22px;
+	display: inline;
+}
+.info .shortcode{
+	font-size: 18px;
+	font-weight: bold;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+.form-group {
+    margin-bottom: 12px;
+}
+.form-group label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group .form-control {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-group .form-control button,
+.form-group .form-control html input[type="button"],
+.form-group input[type="submit"] {
+    color: #fff !important;
+    background-color: #1abc9c !important;
+    border-color: #1abc9c !important;
+}
+.width50{
+	display: inline-block;
+	width: 49%;
+}
+.notice_box{
+	width: 95% !important;
+}
