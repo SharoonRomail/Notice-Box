@@ -20,9 +20,7 @@ Following "Box Type" attibutes can be used for Notice Box (this attribute is not
 - Warning
 ## Installation
 
-```
-Upload the files to the "plugin" folder via FTP and activate the plugin. 
-```
+Upload the files to the "plugin" folder via FTP and activate the plugin.
 ## FAQ
 
 #### How to show Notice Box on page.
