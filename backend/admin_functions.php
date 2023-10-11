@@ -56,7 +56,7 @@ class JP_Admin_Functions {
 			</ul>
 
 			<?php
-			echo do_shortcode( '[notice_box heading="This is Notice Box Heading!" message="Hello! This is Notice Box Message. This Notice Box has Box Type Danger" box_type="Danger"]' );
+			echo do_shortcode( '[notice_box heading="This is Notice Box Heading!" message="Hello! This is Notice Box Message. This Notice Box has Box Type Danger" box_type="Danger" allow_close="yes"]' );
 			echo do_shortcode( '[notice_box heading="This is Notice Box Heading!" message="Hello! This is Notice Box Message. This Notice Box has Box Type Danger" box_type="success"]' );
 			echo do_shortcode( '[notice_box heading="This is Notice Box Heading!" message="Hello! This is Notice Box Message. This Notice Box has Box Type Danger" box_type="info"]' );
 			echo do_shortcode( '[notice_box heading="This is Notice Box Heading!" message="Hello! This is Notice Box Message. This Notice Box has Box Type Danger" box_type="warning"]' );
@@ -73,6 +73,7 @@ class JP_Admin_Functions {
 				'heading' => 'Heading',
 				'message' => 'Message',
 				'box_type' => 'info',
+				'allow_close' => 'no',
 			),
 			$atts
 		);
@@ -80,11 +81,14 @@ class JP_Admin_Functions {
 		$box_heading = $atts['heading'];
 		$msg = $atts['message'];
 		$css_class = strtolower($atts['box_type']);
+		$allow_close = $atts['allow_close'];
 
 		$NoticeBox = '';
 		$NoticeBox = '<div class="notice_box ' . $css_class . '">';
 		$NoticeBox .= '<b>' . $box_heading . '</b> <p>' . $msg . '</p>';
-		$NoticeBox .= '<span class="close_cross">x</span>';
+		if ( $allow_close == 'yes' ){
+			$NoticeBox .= '<span class="close_cross">x</span>';
+		}
 		$NoticeBox .= '</div>';
 		return $NoticeBox;
 	}
